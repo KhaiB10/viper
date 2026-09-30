@@ -1,0 +1,17 @@
+{
+  "name": "@khaib10/viper",
+  "version": "1.0.0",
+  "description": "Strike your own AI agent with prompt injections and see which land. Fires a library of injection techniques at a chat endpoint, each planting a harmless marker, and reports what got past your guardrail.",
+  "type": "module",
+  "bin": { "viper": "bin/viper.js" },
+  "main": "src/strike.js",
+  "exports": { ".": "./src/strike.js", "./payloads": "./src/payloads.js" },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.17" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["llm", "prompt-injection", "security", "red-team", "agents", "jailbreak", "testing"],
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "git+https://github.com/KhaiB10/viper.git" },
+  "author": "Khai Bustos",
+  "license": "MIT"
+}
